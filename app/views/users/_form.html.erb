@@ -12,16 +12,27 @@
   <% end %>
 
       <%= f.label :name, 'submit name:' %>
+      <br>
       <%= f.text_field :name %>
       <br>
       <%= f.label :phone, 'submit phone:' %>     
+      <br>
       <%= f.telephone_field :phone %>
       <br>
       <%= f.label :email, 'submit email:' %>
+      <br>
       <%= f.email_field :email %>      
-
+      <br>
+      <br>
+      <br>
       <%= f.label :latitude, 'latitude:' %>
+      <br>
       <%= f.text_field :latitude %>
+     <br>
+      <%= f.label :longitude, 'longitude:' %>
+      <br>
+      <%= f.text_field :longitude %>
+
 
   <div class="actions">
     <%= f.submit %>
