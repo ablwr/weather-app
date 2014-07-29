@@ -2,7 +2,7 @@
 
 ## Description
 
-Add a short description of your app.
+Weather app that texts users if it will rain at a specified time.
 
 ## Screenshots
 
