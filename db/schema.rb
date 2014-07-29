@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20140729175253) do
 
   create_table "users", force: true do |t|
     t.string   "name"
-    t.integer  "phone"
+    t.string   "phone"
     t.string   "email"
     t.float    "latitude"
     t.float    "longitude"
