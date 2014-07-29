@@ -11,6 +11,7 @@ GOALS for DAY 2:
     Location is found automatically
 - Twilio working
 - Add time field to user.
+- Check if rain or not (work on that logic).
 Extra: - Get whenever working.
        - AJAX and weather options.
        - Looking good.
