@@ -8,10 +8,20 @@ class User < ActiveRecord::Base
     configuration.api_key = '2228ceef0d8a1294ece6fd4935a085bb'
   end
 
-  def current_weather
-    lat = 40.7127
-    long = -74.0059
-    ForecastIO.forecast(lat, long).currently.summary
+  def forecast 
+    @lat = 40.7127
+    @long = -74.0059
+    ForecastIO.forecast(@lat, @long)
   end 
+
+
+  def current_summary
+    forecast.currently.summary
+  end 
+
+  def current_temp
+    forecast.currently.temperature
+  end 
+
 
 end
