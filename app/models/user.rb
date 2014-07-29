@@ -9,8 +9,8 @@ class User < ActiveRecord::Base
   end
 
   def forecast 
-    @lat = 40.7127
-    @long = -74.0059
+    @lat = self.latitude
+    @long = self.longitude
     ForecastIO.forecast(@lat, @long)
   end 
 
