@@ -23,7 +23,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem "figaro"
-
+gem 'whenever', :require => false
 gem 'forecast_io'
 
 
