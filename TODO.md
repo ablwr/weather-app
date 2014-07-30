@@ -3,7 +3,7 @@ TODO for DAY 1: EVENING
 Everyone: Read about geolocation and twilio. Read about whenever gem.
 Luke: Explore weather stats and the API further.
 Kyle: Separate weather from user.
-Ashley: Add bootstrap and integrate whenever gem. Rename heroku and relay login details. Answer twilio API question (string ok for field?)
+Ashley: <s>Add bootstrap and integrate whenever gem. Abstract API key out of git using Figaro.</s> Rename heroku and relay login details (pending cool name). <s>Answer twilio API question (string ok for field?)</s> We can manipulate strings wheneva we want!
 
 GOALS for DAY 2:
 
