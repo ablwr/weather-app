@@ -1,0 +1,12 @@
+html {
+  background-image: url(http://www.dertz.in/wallpapers/files/raindrops%201920x1408-457.jpg);
+
+}
+
+body h1 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 60px;
+  font-family: inherit
+  font-weight: 500;
+  line-height: 1.1;
+}
