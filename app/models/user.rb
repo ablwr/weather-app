@@ -5,16 +5,20 @@ class User < ActiveRecord::Base
   validates_presence_of :name, :email
   include Weather::InstanceMethods
 
-
-
-  def sms
+  def self.sms
     @client = Twilio::REST::Client.new(ENV['TWILIO_SID'], ENV['TWILIO_AUTH_TOKEN'])
-
     @client.account.messages.create(
     :from => '+19842028806',
     :to => '+19198105957',
-    :body => 'Hey there, girl!'
+    :body => 'Hey there, dude!'
     )
   end
 
+  def check_all_times
+    User.all.each do |user|
+      if user.time == Time.now
+        user.sms
+      end
+    end
+  end
 end
