@@ -25,8 +25,8 @@ gem 'spring',        group: :development
 gem 'figaro'
 gem 'whenever', :require => false
 gem 'forecast_io'
-gem 'twilio-ruby'
 gem 'geocoder'
+gem 'twilio-ruby', '~> 3.11'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
