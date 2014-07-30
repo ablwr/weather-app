@@ -1,7 +1,7 @@
 module Weather 
   module InstanceMethods
     ForecastIO.configure do |configuration|
-      configuration.api_key = ENV["FORECAST_API_KEY"]
+      configuration.api_key = ENV["FORECAST_KEY"]
     end
 
     def forecast 
