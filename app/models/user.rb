@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
  #                 		:length => { :minimum => 10, :maximum => 15 }
 
   ForecastIO.configure do |configuration|
-    configuration.api_key = '2228ceef0d8a1294ece6fd4935a085bb'
+    configuration.api_key = ENV["FORECAST_KEY"]
   end
 
   def forecast 
