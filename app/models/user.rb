@@ -91,21 +91,23 @@ class User < ActiveRecord::Base
     end 
 
     def all_data
-      data = [forecast.currently.temp,
-      forecast.currently.apparentTemperature,
-      forecast.currently.cloudCover,
-      forecast.currently.dewPoint,
-      forecast.currently.humidity,
-      forecast.currently.icon,
-      forecast.currently.ozone,
-      forecast.currently.precipIntensity,
-      forecast.currently.precipProbability,
-      forecast.currently.precipType,
-      forecast.currently.pressure,
-      forecast.currently.time,
-      forecast.currently.windBearing,
-      forecast.currently.windSpeed,
-      forecast.currently.sunsetTime]
+      data = {temp: forecast.currently.temp,
+      apparent_temp: forecast.currently.apparentTemperature,
+      cloud_cover: forecast.currently.cloudCover,
+      dew_point: forecast.currently.dewPoint,
+      humidity: forecast.currently.humidity,
+      icon: forecast.currently.icon,
+      ozone: forecast.currently.ozone,
+      precipitation_intensity: forecast.currently.precipIntensity,
+      precipitation_probability: forecast.currently.precipProbability,
+      precipitation_type: forecast.currently.precipType,
+      pressure: forecast.currently.pressure,
+      time: forecast.currently.time,
+      wind_bearing: forecast.currently.windBearing,
+      wind_speed: forecast.currently.windSpeed,
+      sunrise_time: forecast.currently.sunriseTime,
+      sunset_time: forecast.currently.sunsetTime
+    } 
       data
     end
 
