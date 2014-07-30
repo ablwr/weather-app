@@ -26,6 +26,7 @@ gem 'figaro'
 gem 'whenever', :require => false
 gem 'forecast_io'
 gem 'twilio-ruby'
+gem 'geocoder'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
