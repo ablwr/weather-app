@@ -25,7 +25,7 @@ gem 'spring',        group: :development
 gem 'figaro'
 gem 'whenever', :require => false
 gem 'forecast_io'
-
+gem 'twilio-ruby'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
