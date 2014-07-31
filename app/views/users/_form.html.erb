@@ -1,3 +1,4 @@
+<br>
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
@@ -10,32 +11,32 @@
       </ul>
     </div>
   <% end %>
-
-      <%= f.label :name, 'submit name:' %>
+  <p>
+      <%= f.label :name, 'Your name:' %>
       <br>
       <%= f.text_field :name %>
       <br>
-      <%= f.label :phone, 'submit phone:' %>     
+      <%= f.label :phone, 'Your phone:' %>     
       <br>
       <%= f.telephone_field :phone %>
       <br>
-      <%= f.label :email, 'submit email:' %>
+      <%= f.label :email, 'Your email:' %>
       <br>
       <%= f.email_field :email %>      
       <br>
       <br>
-      <br>
-      <%= f.label :address, 'address:' %>
+      <%= f.label :address, 'Your address/location:' %>
       <br>
       <%= f.text_field :address%>
       <br>
       <br>
-      <br>
-      <%= f.label :time, 'time:' %>
+      <%= f.label :time, 'Time:' %>
       <br>
       <%= f.time_field :time%>
-
-
+      <br>
+      <br>
+      <br>
+</p>
 
   <div class="actions">
     <%= f.submit %>

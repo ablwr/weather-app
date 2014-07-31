@@ -1,15 +1,20 @@
-<div class="wrapper">
 
-  <h1>Need an umbrella?</h1>
+<br>
+<br>
+<h1>Need an umbrella?</h1>
+<img src="http://emojipedia.org/wp-content/uploads/2014/04/2614-google-android.png.pagespeed.ce.79dzpMXaw0.png">
+<img src="http://emojipedia.org/wp-content/uploads/2014/04/2614-google-android.png.pagespeed.ce.79dzpMXaw0.png">
+<img src="http://emojipedia.org/wp-content/uploads/2014/04/2614-google-android.png.pagespeed.ce.79dzpMXaw0.png">
+<br>
+<br>
+<br>
+<button class="btn btn-large btn-large"><%= link_to 'New User', new_user_path %></button>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<br><br><br>
+
+<p>Testing:</p>
 <p>Listing users</p>
-  <tbody>
+
     <% @users.each do |user| %>
       <tr>
         <%= link_to user.name, user %> -- 
@@ -17,11 +22,3 @@
          <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %>
       </tr><br />
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New User', new_user_path %>
-
-</div>
