@@ -27,9 +27,16 @@ class User < ActiveRecord::Base
       end 
     }
 
+  def sms
+    @client = Twilio::REST::Client.new(ENV['TWILIO_SID'], ENV['TWILIO_AUTH_TOKEN'])
+    @client.account.messages.create(
+    :from => '+19842028806',
+    :to => self.phone,
+    :body => 'Hey there, dude!'
+    )
+  end
 
-
-  def self.heck_times
+  def self.check_times
     users = User.all.select  {|user| user.time.hour == Time.now.hour && user.time.min == Time.now.min} 
     if !users.empty?
       users.each do |user|
@@ -40,15 +47,6 @@ class User < ActiveRecord::Base
     end 
   end 
 
-
-  def sms
-    @client = Twilio::REST::Client.new(ENV['TWILIO_SID'], ENV['TWILIO_AUTH_TOKEN'])
-    @client.account.messages.create(
-    :from => '+19842028806',
-    :to => self.phone,
-    :body => 'Hey there, dude!'
-    )
-  end
 
   def check_all_times
     User.all.each do |user|
