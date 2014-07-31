@@ -36,15 +36,12 @@ class User < ActiveRecord::Base
     )
   end
 
+
+
   def self.check_times
-    users = User.all.select  {|user| user.time.hour == Time.now.hour && user.time.min == Time.now.min} 
-    if !users.empty?
-      users.each do |user|
+    User.all.each do |user|
         user.sms
-      end 
-    else 
-      puts "nope"
-    end 
+      end  
   end 
 
 
