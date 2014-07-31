@@ -19,3 +19,15 @@ Extra: - Get whenever working.
        - AJAX and weather options.
        - Looking good.
        - Integrate sessions and user authentication.
+
+**TODO for DAY 2: EVENING**
+
+- Group work on getting scheduled text working.
+
+**GOALS for DAY 3:**
+- Get Clockwork working fully with local server
+- Only send one text to user
+- Only send if raining
+- Get working on Heroku
+Extra: - OAuth and sessions
+       - Styling
