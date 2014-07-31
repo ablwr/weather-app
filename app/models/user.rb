@@ -32,7 +32,7 @@ class User < ActiveRecord::Base
     @client.account.messages.create(
     :from => '+19842028806',
     :to => self.phone,
-    :body => 'Hey there, dude!'
+    :body => 'Bring an umbrella!'
     )
   end
 
@@ -40,7 +40,7 @@ class User < ActiveRecord::Base
 
   def self.check_times
     User.all.each do |user|
-        user.sms
+        user.sms if user.icon == "partly-cloudy-day"
       end  
   end 
 
