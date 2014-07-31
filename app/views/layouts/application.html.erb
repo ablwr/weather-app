@@ -10,13 +10,22 @@
 <link href='http://fonts.googleapis.com/css?family=Simonetta:400,900' rel='stylesheet' type='text/css'>
 
 </head>
-<body class="container center-block">
-<div class="row center-block">
-  <div class="col-md-6 col-md-offset-3">
+<body class="container center-block col-lg-6 text-center " style="float: none;">
+
+<div class="nav pull-left">
+  <a class="brand">Need an Umbrella?</a> 
+</div>
+
+<div class="nav pull-right">
+  <a href="/users/sign_up">Log In</a>
+</div>
+
 <%= yield %>
 
   </div>
 </div>
+<br>
+<footer class="footer" style="padding-top:10px;">Made with ♥ by Ashley Blewer, Kyle Doherty, && Luke Demerest @FlatironSchool</footer>
 </body>
 
 </html>
