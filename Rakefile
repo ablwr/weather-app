@@ -4,11 +4,6 @@ require File.expand_path('../config/application', __FILE__)
 
 Rails.application.load_tasks
 
-task :check_time => :environment do 
 
-    User.sms
-  end
 
-  task :say_hello => :environment do 
-    puts "HELLO world"
-  end
+

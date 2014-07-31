@@ -23,10 +23,11 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'figaro'
-gem 'whenever', :require => false
+gem 'whenever'
 gem 'forecast_io'
 gem 'geocoder'
 gem 'twilio-ruby', '~> 3.11'
+gem 'clockwork'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
