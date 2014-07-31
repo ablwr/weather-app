@@ -40,7 +40,7 @@ class User < ActiveRecord::Base
 
   def self.check_times
     User.all.each do |user|
-        user.sms if user.icon == "partly-cloudy-day"
+        user.sms if user.hourly.icon == "rain"
       end  
   end 
 
