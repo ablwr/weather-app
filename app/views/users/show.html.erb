@@ -1,16 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-<div class="container">
-  <h2><%= @user.current_summary %></h2>
-  <h2><%= @user.current_temp %> &deg;F</h2>
+<div class="container" id="show">
+  <h2 id="summary"><%= @user.currently.summary %></h2>
+  <h2 id="temperature"><%= @user.currently.temperature %> &deg;F</h2>
+  <h2 id="address"><%= @user.address %></h2>
+</div>
 
+
+<div>
   <%= @user.name %>
   <br>
-  <%= @user.phone %>
-  <br>
-  <%= @user.email %>
 </div>
 
 <br>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
+
+
