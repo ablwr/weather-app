@@ -1,15 +1,32 @@
 <p id="notice"><%= notice %></p>
 
 
-<div class="container" id="show">
-  <h2 id="summary"><%= @user.currently.summary %></h2>
-  <h2 id="temperature"><%= @user.currently.temperature %> &deg;F</h2>
-  <h2 id="address"><%= @user.address %></h2>
-</div>
+<p class="container">
+		<h2 class="now" id="icon"><%= @user.currently.icon %></h2>
+		<h1 class="now" id="temperature"><%= @user.currently.temperature %> &deg;F</h1>
+	  <h4 class="now" id="summary"><%= @user.currently.summary %></h4>
+	  <h4 class="now" id="address"><%= @user.address %></h4>
+
+	  <h2 class="hourly" id="hourly_icon"><%= @user.hourly_icon %></h2>
+		<h1 class="hourly" id="hourly_temperature"><%= @user.hourly.temperature %> &deg;F</h1>
+	  <h4 class="hourly" id="hourly_summary"><%= @user.hourly_summary %></h4>
+	  <h4 class="hourly" id="hourly_address"><%= @user.address %></h4>
+
+	  <h2 class="daily" id="daily_icon"><%= @user.daily_icon %></h2>
+		<h1 class="daily" id="daily_temperature"><%= @user.forecast.daily.data[0].temperatureMin %> &deg;F - <%= @user.forecast.daily.data[0].temperatureMax %> &deg;F </h1>
+	  <h4 class="daily" id="daily_summary"><%= @user.daily_summary %></h4>
+	  <h4 class="daily" id="daily_address"><%= @user.address %></h4>
+</p>
 
 <div>
-  <%= @user.name %>
+  <!--# <%= @user.name %> -->
   <br>
+</div>
+
+<div id="time">
+	<button id="now">now</button>
+	<button id="today">today</button>
+	<button id="week">week</button>
 </div>
 
 

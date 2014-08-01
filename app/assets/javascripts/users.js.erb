@@ -1,0 +1,36 @@
+$( document ).ready(function(){	
+
+	$('.hourly').hide();
+	$('.daily').hide();
+
+	$('#now').click(function() {
+	        $('.now').show("slow");
+	    });
+	$('#now').click(function() {
+	        $('.hourly').hide("slow");
+	    });
+	$('#now').click(function() {
+	        $('.daily').hide("slow");
+	    });
+
+	$('#today').click(function() {
+	        $('.hourly').show("slow");
+	    });
+	$('#today').click(function() {
+	        $('.now').hide("slow");
+	    });
+	$('#today').click(function() {
+	        $('.daily').hide("slow");
+	    });
+
+	$('#week').click(function() {
+	        $('.daily').show("slow");
+	    });
+	$('#week').click(function() {
+	        $('.now').hide("slow");
+	    });
+	$('#week').click(function() {
+	        $('.hourly').hide("slow");
+	    });
+
+});
