@@ -29,9 +29,13 @@ gem 'geocoder'
 gem 'twilio-ruby', '~> 3.11'
 gem 'clockwork'
 gem 'sidekiq'
+<<<<<<< HEAD
 gem 'redis'
 gem 'sidekiq_monitor'
 
+=======
+gem 'unicorn'
+>>>>>>> video
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
