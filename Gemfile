@@ -28,6 +28,9 @@ gem 'forecast_io'
 gem 'geocoder'
 gem 'twilio-ruby', '~> 3.11'
 gem 'clockwork'
+gem 'sidekiq'
+gem 'redis'
+gem 'sidekiq_monitor'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
