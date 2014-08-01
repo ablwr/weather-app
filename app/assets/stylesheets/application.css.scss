@@ -41,3 +41,14 @@ body {
 .theme-showcase > p > .btn {
   margin: 5px 0;
 }
+
+.btn {
+  border-color: white;
+  background: transparent;
+  color: white;
+}
+
+.btn:hover{
+	background: white;
+	color: black;
+}
