@@ -31,6 +31,7 @@ gem 'clockwork'
 gem 'sidekiq'
 gem 'redis'
 gem 'sidekiq_monitor'
+gem 'sinatra', '>= 1.3.0', :require => nil
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
