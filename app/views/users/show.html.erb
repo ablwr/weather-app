@@ -1,8 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 
-<div class="container">
-	<div id="show">
+<p class="container">
 		<h2 class="now" id="icon"><%= @user.currently.icon %></h2>
 		<h1 class="now" id="temperature"><%= @user.currently.temperature %> &deg;F</h1>
 	  <h4 class="now" id="summary"><%= @user.currently.summary %></h4>
@@ -17,8 +16,7 @@
 		<h1 class="daily" id="daily_temperature"><%= @user.forecast.daily.data[0].temperatureMin %> &deg;F - <%= @user.forecast.daily.data[0].temperatureMax %> &deg;F </h1>
 	  <h4 class="daily" id="daily_summary"><%= @user.daily_summary %></h4>
 	  <h4 class="daily" id="daily_address"><%= @user.address %></h4>
-	</div>
-</div>
+</p>
 
 <div>
   <!--# <%= @user.name %> -->
