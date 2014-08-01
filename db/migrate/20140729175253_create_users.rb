@@ -7,7 +7,7 @@ class CreateUsers < ActiveRecord::Migration
       t.float    :latitude
       t.float    :longitude
       t.string   :address
-      t.time     :time
+      t.datetime     :time
 
       t.timestamps
     end
