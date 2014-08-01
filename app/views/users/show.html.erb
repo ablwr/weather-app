@@ -3,20 +3,20 @@
 
 <div class="container">
 	<div id="show">
-		<h2 id="icon"><%= @user.currently.icon %></h2>
-		<h1 id="temperature"><%= @user.currently.temperature %> &deg;F</h1>
-	  <h2 id="summary"><%= @user.currently.summary %></h2>
-	  <h4 id="address"><%= @user.address %></h4>
+		<h2 class="now" id="icon"><%= @user.currently.icon %></h2>
+		<h1 class="now" id="temperature"><%= @user.currently.temperature %> &deg;F</h1>
+	  <h2 class="now" id="summary"><%= @user.currently.summary %></h2>
+	  <h4 class="now" id="address"><%= @user.address %></h4>
 
-	  <h2 id="hourly_icon"><%= @user.hourly_icon %></h2>
-		<h1 id="hourly_temperature"><%= @user.hourly.temperature %> &deg;F</h1>
-	  <h2 id="hourly_summary"><%= @user.hourly_summary %></h2>
-	  <h4 id="hourly_address"><%= @user.address %></h4>
+	  <h2 class="hourly" id="hourly_icon"><%= @user.hourly_icon %></h2>
+		<h1 class="hourly" id="hourly_temperature"><%= @user.hourly.temperature %> &deg;F</h1>
+	  <h2 class="hourly" id="hourly_summary"><%= @user.hourly_summary %></h2>
+	  <h4 class="hourly" id="hourly_address"><%= @user.address %></h4>
 
-	  <h2 id="daily_icon"><%= @user.daily_icon %></h2>
-		<h1 id="daily_temperature"><%= @user.forecast.daily.data[0].temperatureMin %> &deg;F - <%= @user.forecast.daily.data[0].temperatureMax %> &deg;F </h1>
-	  <h2 id="daily_summary"><%= @user.daily_summary %></h2>
-	  <h4 id="daily_address"><%= @user.address %></h4>
+	  <h2 class="daily" id="daily_icon"><%= @user.daily_icon %></h2>
+		<h1 class="daily" id="daily_temperature"><%= @user.forecast.daily.data[0].temperatureMin %> &deg;F - <%= @user.forecast.daily.data[0].temperatureMax %> &deg;F </h1>
+	  <h2 class="daily" id="daily_summary"><%= @user.daily_summary %></h2>
+	  <h4 class="daily" id="daily_address"><%= @user.address %></h4>
 	</div>
 </div>
 
