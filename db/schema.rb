@@ -11,30 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140801172000) do
-
-  create_table "sidekiq_jobs", force: true do |t|
-    t.string   "jid"
-    t.string   "queue"
-    t.string   "class_name"
-    t.text     "args"
-    t.boolean  "retry"
-    t.datetime "enqueued_at"
-    t.datetime "started_at"
-    t.datetime "finished_at"
-    t.string   "status"
-    t.string   "name"
-    t.text     "result"
-  end
-
-  add_index "sidekiq_jobs", ["class_name"], name: "index_sidekiq_jobs_on_class_name"
-  add_index "sidekiq_jobs", ["enqueued_at"], name: "index_sidekiq_jobs_on_enqueued_at"
-  add_index "sidekiq_jobs", ["finished_at"], name: "index_sidekiq_jobs_on_finished_at"
-  add_index "sidekiq_jobs", ["jid"], name: "index_sidekiq_jobs_on_jid"
-  add_index "sidekiq_jobs", ["queue"], name: "index_sidekiq_jobs_on_queue"
-  add_index "sidekiq_jobs", ["retry"], name: "index_sidekiq_jobs_on_retry"
-  add_index "sidekiq_jobs", ["started_at"], name: "index_sidekiq_jobs_on_started_at"
-  add_index "sidekiq_jobs", ["status"], name: "index_sidekiq_jobs_on_status"
+ActiveRecord::Schema.define(version: 20140729175253) do
 
   create_table "users", force: true do |t|
     t.string   "name"
@@ -43,8 +20,7 @@ ActiveRecord::Schema.define(version: 20140801172000) do
     t.float    "latitude"
     t.float    "longitude"
     t.string   "address"
-    t.time     "time"
-    t.string   "password_digest"
+    t.datetime "time"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
