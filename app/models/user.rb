@@ -23,7 +23,7 @@ class User < ActiveRecord::Base
     @client.account.messages.create(
     :from => '+19842028806',
     :to => self.phone,
-    :body => 'Bring an umbrella!'
+    :body => "Bring an umbrella #{self.name}!"
     )
   end
 

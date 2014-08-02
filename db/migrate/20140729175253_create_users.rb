@@ -8,6 +8,7 @@ class CreateUsers < ActiveRecord::Migration
       t.float        :longitude
       t.string       :address
       t.datetime     :time
+    
 
       t.timestamps
     end
