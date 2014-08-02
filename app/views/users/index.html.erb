@@ -1,24 +1,35 @@
+<link href="video.css" rel="stylesheet">
+<video autoplay loop poster="/assets/skyline.png" id="bgvid">
+<!-- <source src="/assets/rain_test.webm" type="video/webm"> -->
+<source src="/assets/skyline.mp4" type="video/mp4">
+</video>
 
 <br>
 <br>
+
 <h1>Need an umbrella?</h1>
+<!-- 
 <img src="http://emojipedia.org/wp-content/uploads/2014/04/2614-google-android.png.pagespeed.ce.79dzpMXaw0.png">
 <img src="http://emojipedia.org/wp-content/uploads/2014/04/2614-google-android.png.pagespeed.ce.79dzpMXaw0.png">
-<img src="http://emojipedia.org/wp-content/uploads/2014/04/2614-google-android.png.pagespeed.ce.79dzpMXaw0.png">
+<img src="http://emojipedia.org/wp-content/uploads/2014/04/2614-google-android.png.pagespeed.ce.79dzpMXaw0.png"> -->
+
 <br>
 <br>
 <br>
-<button class="btn btn-large btn-large"><%= link_to 'New User', new_user_path %></button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-<br><br><br>
+<br>
 
-<p>Testing:</p>
-<p>Listing users</p>
+<button type="button" class="btn btn-default btn-lg"><%= link_to 'New User', new_user_path %></button>
 
-    <% @users.each do |user| %>
-      <tr>
-        <%= link_to user.name, user %> -- 
-         <%= link_to 'Edit', edit_user_path(user) %> | 
-         <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %>
-      </tr><br />
-    <% end %>
+<br>
+<br>
+<br>
+<br>

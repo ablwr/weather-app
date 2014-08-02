@@ -29,6 +29,12 @@ a {
   }
 }
 
+.btn {
+  border-color: white;
+  background: transparent;
+  color: white;
+}
+
 div {
   &.field, &.actions {
     margin-bottom: 10px;

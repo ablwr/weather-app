@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+  require 'sidekiq/web'
   resources :users
 
   root 'users#index'
+
+  mount Sidekiq::Web => '/sidekiq'
   
 
   # The priority is based upon order of creation: first created -> highest priority.

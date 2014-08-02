@@ -31,3 +31,19 @@ Extra: - Get whenever working.
 - Get working on Heroku
 Extra: - OAuth and sessions
        - Styling
+
+**TODO for DAY 3: EVENING**
+
+- Kyle: Tackling OAuth
+- Luke: Finish AJAX
+- Ashley: Clockwork running locally
+          Video background/Twilio to whitelist/Clockwork/Scheduler
+- Investigate sidekiq (Ashley prioritize)
+
+**GOALS for DAY 4:**
+
+  - Talk about scheduling texting with a mentor
+  - Weather icons
+  - Finishing up app
+
+

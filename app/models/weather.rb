@@ -37,7 +37,7 @@ module Weather
     end
 
     def daily
-      forecast.daily.data[48]
+      forecast.daily.data[0]
     end
 
     def daily_summary
