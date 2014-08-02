@@ -29,8 +29,8 @@ class User < ActiveRecord::Base
   end
 
 
-  def self.check_times
-    User.all.each do |user|
+  def self.check_times(users)
+    users.each do |user|
         user.sms if user.hourly_icon == "rain"
       end  
   end 
