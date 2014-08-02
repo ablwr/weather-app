@@ -16,6 +16,7 @@
     <%= f.text_field :name, size: "16x15", placeholder: "Name" %>
     <%= f.email_field :email, size: "16x15", placeholder: "Email"  %>
     <%= f.time_field :time, size: "16x12", placeholder: "Time"  %>
+    <%= time_zone_select( "user", "time_zone", ActiveSupport::TimeZone.us_zones, default: "Eastern Time (US & Canada)" ) %>
     <%= f.telephone_field :phone, size: "16x15", placeholder: "Telephone"  %>
     <%= f.text_field :address, size: "16x15", placeholder: "Address"  %>
   </div>
