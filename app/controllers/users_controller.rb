@@ -24,8 +24,13 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    
+
     @user = User.create(user_params)
+    Time.zone = params[:user][:time_zone]
+    Chronic.time_class = Time.zone
+    time = Chronic.parse(params[:user][:time])
+    @user.time = time
+    
 
     respond_to do |format|
       if @user.save
@@ -70,7 +75,7 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-     params.require(:user).permit(:name, :email, :phone, :address, :time, :time_zone) 
+     params.require(:user).permit(:name, :email, :phone, :address, :time_zone) 
 
     end
 end
