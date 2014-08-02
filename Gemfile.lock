@@ -200,11 +200,6 @@ GEM
       json
       redis (>= 3.0.6)
       redis-namespace (>= 1.3.1)
-    sidekiq_monitor (0.1.5)
-      jquery-datatables-rails
-      rails-datatables
-      sidekiq (>= 2.2.1)
-      slim
     simplecov (0.9.0)
       docile (~> 1.1.0)
       multi_json
@@ -280,7 +275,6 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   selenium-webdriver
   sidekiq
-  sidekiq_monitor
   simplecov
   spring
   sprockets_better_errors
