@@ -5,7 +5,7 @@
       User.text_if_rain(users)
     end    
 
-    task :check_time => :environment do 
+    task :send_text => :environment do 
       users = User.all
       User.text_if_rain(users)
     end
