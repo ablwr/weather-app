@@ -26,6 +26,8 @@ body {
   padding: 20px;
   padding-top: 40px;
   padding-bottom: 30px;
+  background-image:url('/assets/newyork.jpg');
+  background-size: 100%;
 }
 
 .theme-dropdown .dropdown-menu {
@@ -36,4 +38,25 @@ body {
 
 .theme-showcase > p > .btn {
   margin: 5px 0;
+}
+
+.btn {
+  border-color: white;
+  background: transparent;
+  color: white;
+  border-width: 3px;
+  margin: 7px;
+}
+
+.btn:hover{
+	background: white;
+	color: black;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Arvo', serif;
+}
+
+body h1{
+  font-family: 'Arvo', serif;
 }

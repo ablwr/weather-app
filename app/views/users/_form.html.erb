@@ -11,33 +11,15 @@
       </ul>
     </div>
   <% end %>
-  <p>
-      <%= f.label :name, 'Your name:' %>
-      <br>
-      <%= f.text_field :name %>
-      <br>
-      <%= f.label :phone, 'Your phone:' %>     
-      <br>
-      <%= f.telephone_field :phone %>
-      <br>
-      <%= f.label :email, 'Your email:' %>
-      <br>
-      <%= f.email_field :email %>      
-      <br>
-      <br>
-      <%= f.label :address, 'Your address/location:' %>
-      <br>
-      <%= f.text_field :address%>
-      <br>
-      <br>
-      <%= f.label :time, 'Time:' %>
-      <br>
-      <%= f.time_field :time%>
-      <br>
-      <br>
-      <br>
-</p>
-
+  <br><br><br><br><br><br><br><br><br>
+  <div class="field">
+    <%= f.text_field :name, size: "16x15", placeholder: "Name" %>
+    <%= f.email_field :email, size: "16x15", placeholder: "Email"  %>
+    <%= f.time_field :time, size: "16x12", placeholder: "Time"  %>
+    <%= f.telephone_field :phone, size: "16x15", placeholder: "Telephone"  %>
+    <%= f.text_field :address, size: "16x15", placeholder: "Address"  %>
+  </div>
+  <br><br><br><br><br>
   <div class="actions">
     <%= f.submit %>
   </div>

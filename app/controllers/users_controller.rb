@@ -26,8 +26,6 @@ class UsersController < ApplicationController
   def create
     @user = User.create(user_params)
 
-    TwilioWorker.perform_in(2.minutes, @user.id)
-
     respond_to do |format|
       if @user.save
         format.html { redirect_to @user, notice: 'User was successfully created.' }
