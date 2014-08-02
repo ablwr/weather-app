@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
 
 
   def self.get_users(time_window=10)
-    current_time = Time.now 
+    current_time = Time.current
     time_minus_ten = current_time - 60 * time_window
     User.where("time < ?", current_time).where("time > ?", time_minus_ten)
   end 
