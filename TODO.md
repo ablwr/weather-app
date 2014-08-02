@@ -47,3 +47,13 @@ Extra: - OAuth and sessions
   - Finishing up app
 
 
+**Goals for Day 5:**
+
+- Sessions & Oauth - Kyle 
+- Tests - Kyle 
+- Bootstrap - Luke & Ashley 
+- Style Forms - Luke 
+- Icons - Ashley 
+- Meatballs & Gosling 
+- D3 - Luke 
+- Favorite Locations 
