@@ -31,7 +31,6 @@ gem 'clockwork'
 gem 'sidekiq'
 gem 'redis'
 gem 'chronic'
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

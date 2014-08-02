@@ -16,7 +16,7 @@
 /tmp
 
 .DS_Store
-.Gemfile.lock
+Gemfile.lock
 
 # Ignore application configuration
 /config/application.yml
