@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20140729175253) do
     t.float    "longitude"
     t.string   "address"
     t.time     "time"
+    t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
