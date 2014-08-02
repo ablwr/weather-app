@@ -6,7 +6,6 @@ module Weather
 
     def forecast 
       ForecastIO.forecast(self.latitude, self.longitude)
-      binding.pry
     end 
 
     def currently
