@@ -2,7 +2,12 @@
 
     task :check_time => :environment do 
       users = User.get_users
-      User.check_times(users)
+      User.text_if_rain(users)
+    end    
+
+    task :check_time => :environment do 
+      users = User.all
+      User.text_if_rain(users)
     end
 
   end 

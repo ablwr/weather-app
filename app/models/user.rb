@@ -14,7 +14,6 @@ class User < ActiveRecord::Base
   def self.get_users(time_window=10)
     current_time = Time.now 
     time_minus_ten = current_time - 60 * time_window
-    # binding.pry
     User.where("time < ?", current_time).where("time > ?", time_minus_ten)
   end 
 
@@ -29,7 +28,7 @@ class User < ActiveRecord::Base
   end
 
 
-  def self.check_times(users)
+  def self.text_if_rain(users)
     users.each do |user|
         user.sms if user.hourly_icon == "rain"
       end  
