@@ -23,6 +23,16 @@
 
 
 /* Some Style from the Bootstrap Default Theme */
+
+html {
+  height:100%;
+  }
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
 body {
   padding: 20px;
   padding-top: 40px;
@@ -37,6 +47,7 @@ body {
 a {
   color: #FFE5CF
 }
+
 a:hover {
   text-decoration: none;
 }
