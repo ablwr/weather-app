@@ -31,6 +31,7 @@ gem 'clockwork'
 gem 'sidekiq'
 gem 'redis'
 gem 'chronic'
+gem 'awesome_print', :require => 'ap'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

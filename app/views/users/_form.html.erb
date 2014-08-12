@@ -11,16 +11,19 @@
       </ul>
     </div>
   <% end %>
-  <br><br><br><br><br><br><br><br><br>
   <div class="field">
-    <%= f.text_field :name, size: "16x15", placeholder: "Name" %>
-    <%= f.email_field :email, size: "16x15", placeholder: "Email"  %>
+    <%= f.text_field :name, size: "20x15", placeholder: "Name" %>
+    <%= f.email_field :email, size: "20x15", placeholder: "Email"  %>
+    <br><br><br><br><br><br><br><br><br>
     <%= f.time_field :time, size: "16x12", placeholder: "Time"  %>
+    <br>
+    <br>
     <%= time_zone_select( "user", "time_zone", ActiveSupport::TimeZone.us_zones, default: "Eastern Time (US & Canada)" ) %>
-    <%= f.telephone_field :phone, size: "16x15", placeholder: "Telephone"  %>
-    <%= f.text_field :address, size: "16x15", placeholder: "Address"  %>
+    <br><br>
+    <%= f.telephone_field :phone, size: "20x12", placeholder: "Telephone"  %>
+    <%= f.text_field :address, size: "20x12", placeholder: "Address"  %>
   </div>
-  <br><br><br><br><br>
+  <br><br>
   <div class="actions">
     <%= f.submit %>
   </div>
