@@ -17,9 +17,10 @@
  //= depend_on_asset "bootstrap/glyphicons-halflings-regular.ttf"
  //= depend_on_asset "bootstrap/glyphicons-halflings-regular.svg"
  
+  */
+
  @import "bootstrap";
 
- */
 
 /* Some Style from the Bootstrap Default Theme */
 body {
@@ -29,6 +30,15 @@ body {
   background-image:url('/assets/newyork.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+}
+
+a {
+  color: #FFE5CF
+}
+a:hover {
+  text-decoration: none;
 }
 
 .theme-dropdown .dropdown-menu {
@@ -47,6 +57,7 @@ body {
   color: white;
   border-width: 3px;
   margin: 7px;
+  text-decoration: none;
 }
 
 .btn:hover{
@@ -56,6 +67,7 @@ body {
 
 h1, h2, h3, h4{
   font-family: 'Arvo', serif;
+  color:white;
 }
 
 body h1{
