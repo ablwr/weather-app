@@ -6,34 +6,39 @@ Weather app that texts users if it will rain at a specified time.
 
 ## Screenshots
 
-Add some spiffy screenshots of your app here.
+Coming soon!
 
 ## Background
 
-Why did you want to make this app? What was your development process
-like?
+This application seeks to fulfill a specific need: remind people if they need to bring their umbrella with them to work in the morning based on the weather forecast.
 
 ## Features
 
-Bullet point some of the key features of your app here.
++ Harnessed the Forecast.io API for gathering real-time user-specific weather data
++ Used the Twilio API to send text messages to users
++ Built Sidkiq workers to handle text message on sign up and Heroku scheduler for texting users according to their time preference 
++ Implemented OAuth 1.1 to allow users to login through their Twitter account
 
 ## Usage
 
-How do users use your app?
+Users sign up and receive a text message only if the weather forecast calls for rain.
 
 ## Development/Contribution
 
-Explain how people can contribute to your app. How should they write tests?
-Any things in particular you'd like to see in pull requests?
+Tests will be written.
 
 ## Future
 
-What features are you currently working on? Only mention things that you
-actually are implementing. No pie-in-the-sky-never-gonna-happen stuff.
+- Full test coverage
+- Better server integration
+- Allow users to text a number to receive current weather updates
+- More accurate weather tracking
 
-## Author
+## Authors
 
-Link to your blog, twitter, etc!
+Ashley Blewer(https://github.com/ablwr)
+Kyle Doherty(https://github.com/kylefdoherty)
+Luke Demarest(https://github.com/ldemarest)
 
 ## License
 
