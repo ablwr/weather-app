@@ -2,11 +2,11 @@
 <html>
 <head>
   <title>Need an Umbrella?</title>
+  <%= include_gon %>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
   <%= analytics_init if Rails.env.production? %>
-  <%= include_gon %>
   <style type="text/css">.btn {
   border-color: white;
   background: transparent;
