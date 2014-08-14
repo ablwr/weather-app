@@ -33,4 +33,22 @@ $( document ).ready(function(){
 	        $('.hourly').hide("slow");
 	    });
 
+
+  var icons = new Skycons({"color":"white"});
+  var current_icon = gon.now,
+      hourly_icon  = gon.hourly,
+      daily_icon   = gon.daily;
+
+  icons.add("right-now", current_icon);
+  icons.add("hourly", hourly_icon);
+  icons.add("daily", daily_icon);
+
+  icons.play();
+
+
+
+
+
+	
+
 });
