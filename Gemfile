@@ -32,6 +32,7 @@ gem 'sidekiq'
 gem 'redis'
 gem 'chronic'
 gem 'awesome_print', :require => 'ap'
+gem 'gon'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
