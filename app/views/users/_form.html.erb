@@ -1,5 +1,6 @@
 <br>
-<%= form_for(@user) do |f| %>
+<div class="col-md-12">
+<%= form_for(@user, html: {role: "form"}) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
@@ -11,20 +12,38 @@
       </ul>
     </div>
   <% end %>
-  <div class="field">
-    <%= f.text_field :name, size: "20x15", placeholder: "Name" %>
-    <%= f.email_field :email, size: "20x15", placeholder: "Email"  %>
-    <br><br><br><br><br><br><br><br><br>
-    <%= f.time_field :time, size: "16x12", placeholder: "Time"  %>
-    <br>
-    <br>
-    <%= time_zone_select( "user", "time_zone", ActiveSupport::TimeZone.us_zones, default: "Eastern Time (US & Canada)" ) %>
-    <br><br>
-    <%= f.telephone_field :phone, size: "20x12", placeholder: "Telephone"  %>
-    <%= f.text_field :address, size: "20x12", placeholder: "Address"  %>
+  <div class="col-md-6">
+    <div class="form-group">
+      <%= f.text_field :name, size: "20x15",  class: "form-control", placeholder: "Name" %>
+    </div>
+    <div class="form-group">
+      <%= f.time_field :time, size: "16x12", class: "form-control", placeholder: "Time"  %>
+    </div>
+    <div class="form-group">
+      <%= f.telephone_field :phone, size: "20x12", class: "form-control", placeholder: "Telephone"  %>
+    </div>
   </div>
-  <br><br>
-  <div class="actions">
-    <%= f.submit %>
+
+  <div class="col-md-6">
+    <div class="form-group">
+      <%= f.email_field :email, size: "20x15",  class: "form-control", placeholder: "Email"  %>
+    </div>
+    <div class="form-group">
+      <%= time_zone_select( "user", "time_zone", ActiveSupport::TimeZone.us_zones, {}, {class: "form-control", default: "Eastern Time (US & Canada)"}  ) %>
+    </div>
+
+    <div class="form-group">
+      <%= f.text_field :address, size: "20x12", class: "form-control", placeholder: "Address"  %>
+    </div>
   </div>
+    <div class="actions">
+      <%= f.submit class: "btn btn-default btn-lg col-md-12", id: "submit-button" %>
+    </div>
 <% end %>
+</div>
+
+
+
+
+
+

@@ -10,6 +10,9 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    gon.now = @user.currently.icon
+    gon.hourly = @user.hourly.icon
+    gon.daily = @user.daily.icon
   end
 
   # GET /users/new
